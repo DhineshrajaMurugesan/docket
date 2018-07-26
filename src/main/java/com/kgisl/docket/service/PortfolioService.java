@@ -2,8 +2,6 @@ package com.kgisl.docket.service;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import com.kgisl.docket.model.Portfolio;
 
 

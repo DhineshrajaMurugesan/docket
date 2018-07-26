@@ -2,11 +2,8 @@ package com.kgisl.docket.controller;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
-
 import com.kgisl.docket.model.Portfolio;
-import com.kgisl.docket.repository.PortfolioRepository;
+
 import com.kgisl.docket.service.PortfolioService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,9 +30,7 @@ public class PortfolioController {
 
     @Autowired
     private PortfolioService portfolioService;
-    // private PortfolioRepository portfoilioRepository;
-
-
+    
     @DeleteMapping("/delete/{pId}")
     public ResponseEntity<?> delete(@PathVariable Long pId) {
 System.out.println("Delete Id"+pId);

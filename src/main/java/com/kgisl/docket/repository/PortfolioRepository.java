@@ -10,7 +10,4 @@ import org.springframework.stereotype.Repository;
 @Repository("portfoilioRepository")
 public interface PortfolioRepository extends JpaRepository<Portfolio, Long> {
 
-
-    
-
 }
