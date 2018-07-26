@@ -12,7 +12,6 @@
 .sts4-cache
 .vscode
 .vs
-Dockerfile
 
 ### IntelliJ IDEA ###
 .idea
