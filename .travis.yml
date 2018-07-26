@@ -1,26 +1,45 @@
 sudo: required
 language: java
 jdk: oraclejdk8
+services:
+- docker
+
+git:
+  depth: 500
 
 addons:
   sonarcloud:
-    organization: "baraneetharan-github"
+    organization: baraneetharan-github
     token:
       secure: 5440b0e65f5d7649a722d23996224976f5b68c46
-
 before_install:
-  - chmod +x mvnw
-# script: "mvn test && mvn verify && mvn package sonar:sonar"
-
+- chmod +x mvnw
 script:
-- ./mvnw clean install -B
-- ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
-
+- "./mvnw clean install -B"
+- "./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar"
 cache:
   directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.sonar/cache'
-
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
 notifications:
-    slack: docket-workspace:wLFGj3Bp0Wdsb5qw82bYuqoO
+  slack: docket-workspace:wLFGj3Bp0Wdsb5qw82bYuqoO
+env:
+  global:
+  - secure: nJKX9LBGcY5EgsU0Cs2zT76gnsw2Rp5nnXKJ7Udz9zDkXQT6Fsaa5qGLqdeZrbWaTlRfJj/SBmUHel6HHX6/K65egVSoNgl+15tmwD9XVggRxjHBTYz/TAI7kgWKCIfEhIdsl82JYW6FQZcvrTOIT7rHW9v3NkCsStTFVjFkn0uo3WLHmCr06kV/+tTiDe8rUZeut9yFfrxv+5T0EwxWw71cM9xyqINqKxYAUh5WLmwf8zkvUgiFiP2Cokkb9EKdUk2AHhYln9DEKnzDhBVfhK5ryMQveNcBLxq+ROLUwREv12lUwdwndvp9SpebsP7nMCzarng/SHyETmq60u/aSa1Mh8d+xmRNfHOT9qk//nxV4I8H2b+8gUqC6Kn/YUPSiUobEhNdloCmUviTurODXVxLTYJpomHv2cHrP8F8E2dSOJ6V55pYKXPA5q8Lme1IvbEGdAjPShXm0OgfaiQkeTBX9u4j7bNAHf8pHJk59pKdJUCdeuw5Rp6KrW5WeBswFaLBApyDHY+4fzkYqpnnkYrkpX3W88KVh5dYsdcBTv2KTVshOiNBl6UMU1gQVBbVGhLCwAzln9ttlLFSD2k37OLqsG4uGT/c3GlA89CYt8WINjACcPPBW5sVP4DPxgg00SetdGMzRYDLKYAAavQRTuDfjYwceEhUkqmRoyuAZV0=
+  - secure: arqmiCcDcNPK+VBSDWBbCBnRhtFLc96+WqnlMTSzMD/eSyLyqumz1NjMycWBv9/NIG50toI+gXatAr6qJEQ6/j2tZ2+UQvsE/ZZxKgMfzR7DGVs9SoJveJkV7McWxz2VDCYWKoJ6WD2xUk/BWSkUCBAffABTBQwdpTdxHI1LNVsBOLkuDM3TWXQp9qtpOjOEzAypbMGKGN9xLU3COEeYeMPAXeSUNYBiypTn4eoOlAIJW6oJDg7m9E6ydEiyrIDWR0mIzI6DaQUD0dZX0EgSQdYO/Dee8mWqDgJP0uEzNMGmv/AiAPWa+94zP5zxsG2CORf2NOyEDxXs1DfXQBxTrbVjICtvlOqgl4ioZYz0Kecs7P8wZJnDYo/fPSNwhQE4dsDoNPxKHIlZERNI031kAdH1VnOo38zlsNwoZa42S3MKzhhtIE8TZXfkJnhZt8f8C+RNaoUUj2tdh+8U16cl4y8phWtW+LqGUedGvwYOEyT9EamdwMot6hzsIphPaj2IsUltcW/HRKHV6z4vlH3kq3oey1sDkDy4OtVbT1UPhpgzvD6adr2aJt70wa1aMA4SIS0NQgL69Pdw3nFTOV9/6jU1It1QN8GjdYSouYwp0zBp/CGX8wGvU8QP8sD5R/NNnG5/znFBRPVw0KZX+q2hS2lFM+b9Y/Jbjbg3UHPZ960=
+  - secure: r0e0LyAuAqMLH5vJo2pV9niXldkfS4+CrdPfHdB4vUwJ0ncGPVDfdX4O+032jj/A1CCpZdA1PxbP9a5g7lU5pApgX2kDII8OKj5N3M5rdgilsi9V0se7QtLG3x3NVLnJ3VGJQtGCaHggBniRJeoscDTZoTA+N7xwG4r2AhcNsd4qSXFVrTFrBs3KE/tEWsCINNW/vbJJkKYN1uL/IL97VfBJt/80N1H6Teei5B8PUWTLbbFwoSrpr6hMrr+arzUKf4+kcwdYJxsC1YqVAMRi/CcVHnM+GhBXdiNimcai6mXLg0Tu6/nn3N1EZbkjgPHOcoPHZIexoUex5tLBK7wGAxdJhkiX1Fa2cEoH3sKEXu4NAOSzt03U9IBi49RHDWWfxm2U+sRL2wJ09E+A3uw5AJFs2vA5sF7ZI4P6t7mSNV4GTX5fT2Bxv4UsLQONfUaCAwnEUnyEvOfhXngoqmVYgRT40VahFZi2CXzz43fwxSq8KDZiVKoOaqQc6E5S32yNSlBDAKYqF45mi5u/zmVIUsaQJXOb8h214Rg4OrNcCxkqDyi4m5iZ8OZCwzcD93VF6r5CfzvjaPcHCCv912ktxYweHE8ps9bR1VBKQrBJREk8/6cXFuv/JbKyxCng9Q/PxtxeIHHUXeMrkpVdVr+BIPNJdp22o8a0G/IpHtaQiBo=
+  - COMMIT=${TRAVIS_COMMIT::7}
 
+after_success:
+- docker login -u $DOCKER_USER -p $DOCKER_PASS
+- export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
+  ; fi`
+- export IMAGE_NAME=baraneetharan/docket
+- docker build -t $IMAGE_NAME:$COMMIT .
+- docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
+- docker push $IMAGE_NAME
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: docketapp
