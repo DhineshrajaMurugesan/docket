@@ -22,3 +22,5 @@ Pipeline events will be routed to #docketcomm
 Travis CI integrated
 Jacoco plugin added
 Travis CI Slack integrated
+vscode live share tested ...
+ok done
