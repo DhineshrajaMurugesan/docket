@@ -2,7 +2,7 @@
 docket application is used to track individual financial assets.
 
 # CI/CD
-vscode => [![Build Status](https://travis-ci.org/baraneetharan/docket.svg?branch=master)](https://travis-ci.org/baraneetharan/docket)
+vscode => [![Build Status](https://travis-ci.org/baraneetharan/docket.svg?branch=master)](https://travis-ci.org/baraneetharan/docket) => https://sonarcloud.io/api/project_badges/measure?project=com.kgisl%3Adocket&metric=alert_status
 
 # slack github integration
 /github subscribe baraneetharan/docket issues pulls statuses commits deployments public releases reviews comments branches commits:all
