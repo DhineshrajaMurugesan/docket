@@ -38,7 +38,7 @@ after_success:
 - docker login -u baraneetharan -p Baranee@123
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH
   ; fi`
-- export IMAGE_NAME=baraneetharan/docket
+- export IMAGE_NAME=baraneetharan/docketapp
 - docker build -t $IMAGE_NAME:$COMMIT .
 - docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
 - docker push $IMAGE_NAME
