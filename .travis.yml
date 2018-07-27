@@ -49,4 +49,4 @@ deploy:
   app: docketapp
   skip_cleanup: false
   on:
-    all_branches: true
+    branch: staging
