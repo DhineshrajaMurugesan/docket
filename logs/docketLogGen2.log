@@ -1,0 +1,88 @@
+*[INFO ]-- Starting PortfolioControllerITest on 3FTRN8235 with PID 92700 (started by Trainee in D:\kirudiha\slackprojects\docket)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting service [Tomcat]--
+*[INFO ]-- Starting Servlet Engine: Apache Tomcat/8.5.31--
+*[INFO ]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\trainee\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;"C:\Program Files\Java\jdk1.8.0_131\bin;";D:\apache-maven-3.5.0\bin;;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\nodejs\;C:\Users\trainee\AppData\Local\Microsoft\WindowsApps;C:\Users\trainee\AppData\Local\Programs\Git\cmd;.]--
+*[INFO ]-- Initializing Spring embedded WebApplicationContext--
+*[INFO ]-- HikariPool-1 - Starting...--
+*[INFO ]-- HikariPool-1 - Start completed.--
+*[INFO ]-- Initializing Spring FrameworkServlet ''--
+*[INFO ]-- Context refreshed--
+*[INFO ]-- Found 1 custom documentation plugin(s)--
+*[INFO ]-- Scanning for api listing references--
+*[INFO ]-- Started PortfolioControllerITest in 68.483 seconds (JVM running for 73.03)--
+*[INFO ]-- Initializing Spring FrameworkServlet 'dispatcherServlet'--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  getAll--
+*[WARN ]-- Argumentsttt :  []--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : getAll --
+*[INFO ]-- > with value : [[1 cat symbol]]--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  delete--
+*[WARN ]-- Argumentsttt :  [2]--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : delete --
+*[INFO ]-- >with null as return value.--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  save--
+*[WARN ]-- Argumentsttt :  [[[1 cats symbol]]]--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : save --
+*[INFO ]-- > with value : [[3 cat symbol], [4 cats symbol]]--
+*[INFO ]-- Starting DocketApplicationTests on 3FTRN8235 with PID 92700 (started by Trainee in D:\kirudiha\slackprojects\docket)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- HikariPool-2 - Starting...--
+*[INFO ]-- HikariPool-2 - Start completed.--
+*[INFO ]-- Context refreshed--
+*[INFO ]-- Found 1 custom documentation plugin(s)--
+*[INFO ]-- Scanning for api listing references--
+*[INFO ]-- Started DocketApplicationTests in 10.308 seconds (JVM running for 180.693)--
+*[INFO ]-- HikariPool-1 - Shutdown initiated...--
+*[INFO ]-- HikariPool-2 - Shutdown initiated...--
+*[INFO ]-- HikariPool-2 - Shutdown completed.--
+*[INFO ]-- HikariPool-1 - Shutdown completed.--
+*[INFO ]-- Starting PortfolioControllerITest on 3FTRN8235 with PID 60956 (started by Trainee in D:\kirudiha\slackprojects\docket)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting service [Tomcat]--
+*[INFO ]-- Starting Servlet Engine: Apache Tomcat/8.5.31--
+*[INFO ]-- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\trainee\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;"C:\Program Files\Java\jdk1.8.0_131\bin;";D:\apache-maven-3.5.0\bin;;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\nodejs\;C:\Users\trainee\AppData\Local\Microsoft\WindowsApps;C:\Users\trainee\AppData\Local\Programs\Git\cmd;.]--
+*[INFO ]-- Initializing Spring embedded WebApplicationContext--
+*[INFO ]-- HikariPool-1 - Starting...--
+*[INFO ]-- HikariPool-1 - Start completed.--
+*[INFO ]-- Initializing Spring FrameworkServlet ''--
+*[INFO ]-- Context refreshed--
+*[INFO ]-- Found 1 custom documentation plugin(s)--
+*[INFO ]-- Scanning for api listing references--
+*[INFO ]-- Started PortfolioControllerITest in 80.989 seconds (JVM running for 84.33)--
+*[INFO ]-- Initializing Spring FrameworkServlet 'dispatcherServlet'--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  getAll--
+*[WARN ]-- Argumentsttt :  []--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : getAll --
+*[INFO ]-- > with value : [[1 cat symbol]]--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  delete--
+*[WARN ]-- Argumentsttt :  [2]--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : delete --
+*[INFO ]-- >with null as return value.--
+*[INFO ]-- -----------------------@Before advice called----------------------------------------
+*[INFO ]-- Entering in Method :  save--
+*[WARN ]-- Argumentsttt :  [[[1 cats symbol]]]--
+*[INFO ]-- ------------------- @AfterReturning advice called -----------------------------------
+*[INFO ]--  >Returning for class : com.kgisl.docket.service.PortfolioServiceImp ; Method : save --
+*[INFO ]-- > with value : [[3 cat symbol], [4 cats symbol]]--
+*[INFO ]-- Starting DocketApplicationTests on 3FTRN8235 with PID 60956 (started by Trainee in D:\kirudiha\slackprojects\docket)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- HikariPool-2 - Starting...--
+*[INFO ]-- HikariPool-2 - Start completed.--
+*[INFO ]-- Context refreshed--
+*[INFO ]-- Found 1 custom documentation plugin(s)--
+*[INFO ]-- Scanning for api listing references--
+*[INFO ]-- Started DocketApplicationTests in 7.317 seconds (JVM running for 113.334)--
+*[INFO ]-- HikariPool-2 - Shutdown initiated...--
+*[INFO ]-- HikariPool-1 - Shutdown initiated...--
+*[INFO ]-- HikariPool-2 - Shutdown completed.--
+*[INFO ]-- HikariPool-1 - Shutdown completed.--

@@ -9,10 +9,15 @@ import com.kgisl.docket.repository.PortfolioRepository;
 
 import static com.jayway.restassured.RestAssured.given;
 
+import org.apache.http.HttpStatus;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import static com.jayway.restassured.RestAssured.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -47,18 +52,21 @@ public class PortfolioControllerITest {
     }
   @Test
     public void addItemShouldReturnSavedItem() {
-        given().body(portfolio12).contentType(ContentType.JSON).when().post(port2).then();
+        List<Portfolio> port=new ArrayList<Portfolio>();
+        port.add(portfolio12);
+        given().body(port).contentType(ContentType.JSON)
+        .when().post(port2).then().statusCode(HttpStatus.SC_OK);
     }
 
 
     @Test
     public void getItemsShouldReturnBothItems() {
-        when().get(port1).then();
+        when().get(port1).then().statusCode(HttpStatus.SC_OK);
     }
 
     @Test
     public void deleteItemShouldReturnNoContent() {
-        when().delete(port3, portfolio.getId()).then();
+        when().delete(port3, portfolio.getId()).then().statusCode(HttpStatus.SC_OK);
     }
 
 }

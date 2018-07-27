@@ -47,4 +47,8 @@ public class Portfolio {
 		return "[" + id + " " + cat + " " + symbol + "]";
 	}
 
+	public Object thenReturn(Portfolio portfolio11) {
+		return null;
+	}
+
 }
