@@ -47,4 +47,3 @@ deploy:
   provider: heroku
   api_key: e091f2d5-df18-489b-8da6-db8735cd8df8
   app: docketserver
-  skip_cleanup: true
