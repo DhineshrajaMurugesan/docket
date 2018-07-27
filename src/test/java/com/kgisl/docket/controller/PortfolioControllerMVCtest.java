@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.kgisl.docket.model.Portfolio;
+import com.kgisl.docket.PortfolioBuilder;
 import com.kgisl.docket.controller.PortfolioController;
 import com.kgisl.docket.service.PortfolioService;
 
@@ -45,7 +46,7 @@ public class PortfolioControllerMVCtest {
 
         given(portfolioService.getAll()).willReturn(expectedPortfolio);
         mockMvc.perform(get("/api/portfolio/get").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
-                .andExpect(content().json("[{'id':1,'cat':'cat','symbol':'symbol'}]"));
+                .andExpect(content().json("[{'id':1L,'cat':'cat','symbol':'symbol'}]"));
 
     }
     

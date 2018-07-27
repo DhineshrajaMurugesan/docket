@@ -1,4 +1,4 @@
-package com.kgisl.docket.controller;
+package com.kgisl.docket;
 
 import com.kgisl.docket.model.Portfolio;
 

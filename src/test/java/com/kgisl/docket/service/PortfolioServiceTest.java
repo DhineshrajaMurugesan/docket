@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.kgisl.docket.controller.PortfolioBuilder;
+import com.kgisl.docket.PortfolioBuilder;
 import com.kgisl.docket.model.Portfolio;
 import com.kgisl.docket.repository.PortfolioRepository;
 
